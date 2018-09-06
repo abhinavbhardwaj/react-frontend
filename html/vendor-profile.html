@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hunger Folks</title>
+<meta name="description" content="Thousands of restaurants have grown their business with Hunger Folks. New customers and more orders are waiting. Learn how we can help here.">
+<meta name="keywords" content="Hunger Folks">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link href="css/bootstrap-imageupload.css" rel="stylesheet">
+<meta name="robots" content="index, follow">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav id="hf-menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="HangerFolks" /></a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right hf-main-nav__list js-signin-modal-trigger">
+        <li><a href="food.html">Food</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li><a href="javascript:;"><span class="fa fa-shopping-cart edd-cart-icon"><span class="edd-cart-quantity base_clr_bg">5</span></span></a></li>
+        <li><a class="hf-main-nav__item hf-main-nav__item--signin" href="#0" data-signin="login">Sign in/Sign up</a></li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img alt="" class="img-circle avatar" src="images/avatar.jpg"> Tarun <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li> <a href="#"> <i class="fa fa-user"></i> <span class="text">My Account</span> </a> </li>
+            <li> <a href="#"> <i class="fa fa-list"></i> <span class="text">My Orders</span> </a> </li>
+            <li> <a href="#"> <i class="fa fa-power-off"></i> <span class="text">Logout</span> </a> </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Breadcrumb Section Start -->
+<div class="breadcrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>Vendor Profile</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="restaurant-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="col-sm-3">
+          <ul class="nav nav-tabs tabs-left">
+            <li class="active"><a href="#myAccount" data-toggle="tab">My Account</a></li>
+            <li><a href="#editRestaurant" data-toggle="tab">Edit Restaurant</a></li>
+            <li><a href="#deliveredOrders" data-toggle="tab">Delivered Orders</a></li>
+            <li><a href="#pendingOrders" data-toggle="tab">Pending Orders</a></li>
+            <li><a href="#itemsDashboard" data-toggle="tab">Items Dashboard</a></li>
+            <li><a href="#editProfile" data-toggle="tab">Edit Profile</a></li>
+            <li><a href="#changePassword" data-toggle="tab">Change Password</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9">
+          <div class="tab-content">
+            <div class="tab-pane active" id="myAccount">
+              <div class="col-sm-12">
+                <h3>Login & Security</h3>
+                <div class="help-block">&nbsp;</div>
+                <div class="user-details col-sm-4">
+                  <h5>Name:</h5>
+                  <p>Sri Rama</p>
+                </div>
+                <div class="user-details col-sm-4">
+                  <h5>E-mail:</h5>
+                  <p>srirama@gmail.com</p>
+                </div>
+                <div class="user-details col-sm-4">
+                  <h5>Mobile Number:</h5>
+                  <p>+91 9002150150</p>
+                </div>
+                <div class="clearfix help-block"></div>
+                <div class="user-details col-sm-4">
+                  <h5>Complete Orders:</h5>
+                  <p>10</p>
+                </div>
+                <div class="user-details col-sm-4">
+                  <h5>Pending Orders:</h5>
+                  <p>4</p>
+                </div>
+                <div class="clearfix help-block"></div>
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#addressDetails"> Address Details</a> </h4>
+                    </div>
+                    <div id="addressDetails" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <div class="col-sm-4">
+                          <div class="control-group form-group">
+                            <label>Door / Flat No:</label>
+                            <input type="text" class="form-control" name="mobile" placeholder="Please enter details">
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="control-group form-group">
+                            <label>Address:</label>
+                            <input type="text" class="form-control" name="mobile" placeholder="Please enter dddress">
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="control-group form-group">
+                            <label>City:</label>
+                            <select name="city" class="form-control selectpicker" >
+                              <option value=" " >Please select your state</option>
+                              <option>Alabama</option>
+                              <option>Alaska</option>
+                              <option >Arizona</option>
+                              <option >Arkansas</option>
+                              <option >California</option>
+                              <option >Colorado</option>
+                              <option >Connecticut</option>
+                              <option >Delaware</option>
+                              <option >District of Columbia</option>
+                              <option> Florida</option>
+                              <option >Georgia</option>
+                              <option >Hawaii</option>
+                              <option >daho</option>
+                              <option >Illinois</option>
+                              <option >Indiana</option>
+                              <option >Iowa</option>
+                              <option> Kansas</option>
+                              <option >Kentucky</option>
+                              <option >Louisiana</option>
+                              <option>Maine</option>
+                              <option >Maryland</option>
+                              <option> Mass</option>
+                              <option >Michigan</option>
+                              <option >Minnesota</option>
+                              <option>Mississippi</option>
+                              <option>Missouri</option>
+                              <option>Montana</option>
+                              <option>Nebraska</option>
+                              <option>Nevada</option>
+                              <option>New Hampshire</option>
+                              <option>New Jersey</option>
+                              <option>New Mexico</option>
+                              <option>New York</option>
+                              <option>North Carolina</option>
+                              <option>North Dakota</option>
+                              <option>Ohio</option>
+                              <option>Oklahoma</option>
+                              <option>Oregon</option>
+                              <option>Pennsylvania</option>
+                              <option>Rhode Island</option>
+                              <option>South Carolina</option>
+                              <option>South Dakota</option>
+                              <option>Tennessee</option>
+                              <option>Texas</option>
+                              <option> Uttah</option>
+                              <option>Vermont</option>
+                              <option>Virginia</option>
+                              <option >Washington</option>
+                              <option >West Virginia</option>
+                              <option>Wisconsin</option>
+                              <option >Wyoming</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-4">
+                          <div class="control-group form-group">
+                            <label>State:</label>
+                            <select name="state" class="form-control selectpicker" >
+                              <option value=" " >Please select your state</option>
+                              <option>Alabama</option>
+                              <option>Alaska</option>
+                              <option >Arizona</option>
+                              <option >Arkansas</option>
+                              <option >California</option>
+                              <option >Colorado</option>
+                              <option >Connecticut</option>
+                              <option >Delaware</option>
+                              <option >District of Columbia</option>
+                              <option> Florida</option>
+                              <option >Georgia</option>
+                              <option >Hawaii</option>
+                              <option >daho</option>
+                              <option >Illinois</option>
+                              <option >Indiana</option>
+                              <option >Iowa</option>
+                              <option> Kansas</option>
+                              <option >Kentucky</option>
+                              <option >Louisiana</option>
+                              <option>Maine</option>
+                              <option >Maryland</option>
+                              <option> Mass</option>
+                              <option >Michigan</option>
+                              <option >Minnesota</option>
+                              <option>Mississippi</option>
+                              <option>Missouri</option>
+                              <option>Montana</option>
+                              <option>Nebraska</option>
+                              <option>Nevada</option>
+                              <option>New Hampshire</option>
+                              <option>New Jersey</option>
+                              <option>New Mexico</option>
+                              <option>New York</option>
+                              <option>North Carolina</option>
+                              <option>North Dakota</option>
+                              <option>Ohio</option>
+                              <option>Oklahoma</option>
+                              <option>Oregon</option>
+                              <option>Pennsylvania</option>
+                              <option>Rhode Island</option>
+                              <option>South Carolina</option>
+                              <option>South Dakota</option>
+                              <option>Tennessee</option>
+                              <option>Texas</option>
+                              <option> Uttah</option>
+                              <option>Vermont</option>
+                              <option>Virginia</option>
+                              <option >Washington</option>
+                              <option >West Virginia</option>
+                              <option>Wisconsin</option>
+                              <option >Wyoming</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="control-group form-group">
+                            <label>Country:</label>
+                            <select name="country" class="form-control selectpicker" >
+                              <option value=" " >Please select your state</option>
+                              <option>Alabama</option>
+                              <option>Alaska</option>
+                              <option >Arizona</option>
+                              <option >Arkansas</option>
+                              <option >California</option>
+                              <option >Colorado</option>
+                              <option >Connecticut</option>
+                              <option >Delaware</option>
+                              <option >District of Columbia</option>
+                              <option> Florida</option>
+                              <option >Georgia</option>
+                              <option >Hawaii</option>
+                              <option >daho</option>
+                              <option >Illinois</option>
+                              <option >Indiana</option>
+                              <option >Iowa</option>
+                              <option> Kansas</option>
+                              <option >Kentucky</option>
+                              <option >Louisiana</option>
+                              <option>Maine</option>
+                              <option >Maryland</option>
+                              <option> Mass</option>
+                              <option >Michigan</option>
+                              <option >Minnesota</option>
+                              <option>Mississippi</option>
+                              <option>Missouri</option>
+                              <option>Montana</option>
+                              <option>Nebraska</option>
+                              <option>Nevada</option>
+                              <option>New Hampshire</option>
+                              <option>New Jersey</option>
+                              <option>New Mexico</option>
+                              <option>New York</option>
+                              <option>North Carolina</option>
+                              <option>North Dakota</option>
+                              <option>Ohio</option>
+                              <option>Oklahoma</option>
+                              <option>Oregon</option>
+                              <option>Pennsylvania</option>
+                              <option>Rhode Island</option>
+                              <option>South Carolina</option>
+                              <option>South Dakota</option>
+                              <option>Tennessee</option>
+                              <option>Texas</option>
+                              <option> Uttah</option>
+                              <option>Vermont</option>
+                              <option>Virginia</option>
+                              <option >Washington</option>
+                              <option >West Virginia</option>
+                              <option>Wisconsin</option>
+                              <option >Wyoming</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="control-group form-group">
+                            <label>Zip Code:</label>
+                            <input type="text" class="form-control" name="zipcode">
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-12">
+                          <h4>Upload Restaurant Photo</h4>
+                          <div class="imageupload">
+                            <div class="file-tab panel-body">
+                              <label class="btn btn-default btn-file"> <span>Browse</span>
+                                <input type="file" name="image-file">
+                              </label>
+                              <button type="button" class="btn btn-default">Remove</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <hr>
+                        <div class="col-md-12">
+                          <div class="control-group form-group pull-right">
+                            <button type="submit" class="btn btn-warning">UPDATE</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#bankDetails"> Bank Details</a> </h4>
+                    </div>
+                    <div id="bankDetails" class="panel-collapse expand">
+                      <div class="panel-body">
+                        <div class="col-sm-4">
+                          <div class="control-group form-group">
+                            <label>Bank Name:</label>
+                            <input type="text" class="form-control" name="bank_name" placeholder="Please enter Bank Name">
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="control-group form-group">
+                            <label>Account Name:</label>
+                            <input type="text" class="form-control" name="account_name" placeholder="Account Name">
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="control-group form-group">
+                            <label>Account No.:</label>
+                            <input type="text" class="form-control" name="account_number" placeholder="Account Number">
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-2">
+                          <div class="control-group form-group">
+                            <label>IFSC Code:</label>
+                            <div class="clearfix"></div>
+                            <div class="pull-left">
+                              <input type="tel" class="form-control" name="ifsc" style="width:90px;">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <hr>
+                        <div class="col-md-12">
+                          <div class="control-group form-group pull-right">
+                            <button type="submit" class="btn btn-warning">UPDATE</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#addRestaurant"> Add Restaurant</a> </h4>
+                    </div>
+                    <div id="addRestaurant" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <div class="col-sm-12 no-padding">
+                          <div class="col-sm-4">
+                            <div class="control-group form-group">
+                              <label>Location Name:</label>
+                              <input type="text" class="form-control" name="location_name" placeholder="Please enter Location">
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="control-group form-group">
+                              <label>Location Co-ordinates:</label>
+                              <input type="text" class="form-control" name="co-ordinates" placeholder="Please enter Location Co-ordinates">
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="control-group form-group">
+                              <label>Phone Number:</label>
+                              <input type="text" class="form-control" name="phone" placeholder="Please enter Phone Number">
+                            </div>
+                          </div>
+                          <div class="clearfix"></div>
+                          <div class="col-sm-4">
+                            <div class="control-group form-group">
+                              <label>Email ID:</label>
+                              <input type="text" class="form-control" name="email" placeholder="Please enter Email">
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="control-group form-group">
+                              <label>Min Amount:</label>
+                              <input type="text" class="form-control" name="Amount" placeholder="Please enter Amount">
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="control-group form-group">
+                              <label>Delivery Time:</label>
+                              <input type="text" class="form-control" name="mobile" placeholder="Please enter Delivery Time">
+                            </div>
+                          </div>
+                          <div class="clearfix"></div>
+                          <div class="col-sm-4">
+                            <div class="control-group form-group">
+                              <label>Delivery Type:</label>
+                              <select name="city" class="form-control selectpicker" >
+                                <option value=" " >-- Select Type --</option>
+                                <option>Pick-up</option>
+                                <option>Delivery</option>
+                                <option>Both</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="control-group form-group">
+                              <label>Restaurant Timings:</label>
+                              <div class="clearfix"></div>
+                              <div class="pull-left">
+                                <input type="tel" class="form-control timings" name="am" placeholder="9:00AM">
+                                &nbsp; <span class="timeto">to</span> &nbsp;
+                                <input type="tel" class="form-control timings" name="pm" placeholder="10:00PM">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="control-group form-group">
+                              <label>No. of kms:</label>
+                              <select name="country" class="form-control selectpicker" >
+                                <option value=" " >-- Select --</option>
+                                <option>0-2km</option>
+                                <option>2-5km</option>
+                                <option>5-7km</option>
+                                <option>7-10km</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="clearfix"></div>
+                          <div class="col-sm-4">
+                            <div class="control-group form-group">
+                              <label>Restaurant Type:</label>
+                              <select name="city" class="form-control selectpicker" >
+                                <option value=" " >-- Restaurant Type --</option>
+                                <option>Restaurant</option>
+                                <option>Coffee Shop</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="control-group form-group">
+                              <label>Status:</label>
+                              <select name="city" class="form-control selectpicker" >
+                                <option value=" " >-- Status --</option>
+                                <option>Now Open</option>
+                                <option>Now Close</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="clearfix help-block">&nbsp;</div>
+                          <hr>
+                          <div class="text-center boldtext">Your Restaurant has been created successfully.</div>
+                          <div class="clearfix"></div>
+                          <hr>
+                          <div class="col-md-12 no-padding">
+                            <div class="control-group form-group pull-right">
+                              <button type="submit" class="btn btn-warning">ADD RESTAURANT</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-sm-12">
+                <div class="flat-product clearfix">
+                  <div class="featured-product"> <img src="images/restaurants.jpg" alt="Restaurant Name">
+                    <div class="time bg-green"> Now Open </div>
+                  </div>
+                  <div class="rate-product">
+                    <div class="info-product">
+                      <h6 class="title">San Antonio Restaurants</h6>
+                      <p>208 W 70th Street, New York, NY</p>
+                      <p class="orange-text">Coffee Shop</p>
+                      <p><a href="javascript:;"><i class="fa fa-trash"></i> Delete</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="editRestaurant">
+              <div class="col-sm-12">
+                <h3>Edit Restaurant</h3>
+                <div class="help-block">&nbsp;</div>
+                <div class="col-sm-4">
+                  <div class="control-group form-group">
+                    <label>Location Name:</label>
+                    <input type="text" class="form-control" name="location_name" value="Hi-tech City">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="control-group form-group">
+                    <label>Location Co-ordinates:</label>
+                    <input type="text" class="form-control" name="co-ordinates" value="Hi-tech City">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="control-group form-group">
+                    <label>Phone Number:</label>
+                    <input type="text" class="form-control" name="phone" value="646463465">
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-sm-4">
+                  <div class="control-group form-group">
+                    <label>Email ID:</label>
+                    <input type="text" class="form-control" name="email" value="test@gmail.com">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="control-group form-group">
+                    <label>Min Amount:</label>
+                    <input type="text" class="form-control" name="Amount" value="₹343">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="control-group form-group">
+                    <label>Delivery Time:</label>
+                    <input type="text" class="form-control" name="mobile" value="20mins">
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-sm-4">
+                  <div class="control-group form-group">
+                    <label>Delivery Type:</label>
+                    <select name="city" class="form-control selectpicker" >
+                      <option value=" " >-- Select Type --</option>
+                      <option>Pick-up</option>
+                      <option>Delivery</option>
+                      <option>Both</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="control-group form-group">
+                    <label>Restaurant Timings:</label>
+                    <div class="clearfix"></div>
+                    <div class="pull-left">
+                      <input type="tel" class="form-control timings" name="am" value="9:00AM">
+                      &nbsp; <span class="timeto">to</span> &nbsp;
+                      <input type="tel" class="form-control timings" name="pm" value="10:00PM">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="control-group form-group">
+                    <label>No. of kms:</label>
+                    <select name="country" class="form-control selectpicker" >
+                      <option value=" " >-- Select --</option>
+                      <option>0-2km</option>
+                      <option>2-5km</option>
+                      <option>5-7km</option>
+                      <option>7-10km</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-sm-4">
+                  <div class="control-group form-group">
+                    <label>Restaurant Type:</label>
+                    <select name="city" class="form-control selectpicker" >
+                      <option value=" " >-- Restaurant Type --</option>
+                      <option>Restaurant</option>
+                      <option>Coffee Shop</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="control-group form-group">
+                    <label>Status:</label>
+                    <select name="city" class="form-control selectpicker" >
+                      <option value=" " >-- Status --</option>
+                      <option>Now Open</option>
+                      <option>Now Close</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="clearfix help-block">&nbsp;</div>
+                <hr>
+                <div class="text-center boldtext">Your Restaurant has been updated successfully.</div>
+                <div class="clearfix"></div>
+                <hr>
+                <div class="col-md-12">
+                  <div class="control-group form-group pull-right">
+                    <button type="submit" class="btn btn-warning">UPDATE RESTAURANT</button>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="tab-pane" id="deliveredOrders">
+              <h3>Delivered Orders</h3>
+              <div class="col-sm-12">
+                <form class="pull-right">
+                  <div class="col-sm-6">
+                    <div class="control-group form-group">
+                      <select name="country" class="form-control selectpicker" >
+                        <option value=" " >-- Sort by --</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option >March</option>
+                        <option >April</option>
+                        <option >May</option>
+                        <option >June</option>
+                        <option >July</option>
+                        <option >August</option>
+                        <option >September</option>
+                        <option> October</option>
+                        <option >November</option>
+                        <option >December</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="input-group">
+                      <input type="text" value="" class="form-control" placeholder="Search Order ID">
+                      <span class="input-group-btn">
+                      <button type="button" class="btn btn-danger">Go</button>
+                      </span> </div>
+                  </div>
+                </form>
+                <div class="help-block"></div>
+              </div>
+              <div class="col-sm-12">
+                <div class="delivered-orders">
+                  <p><strong>Customer Name:</strong> Pavani Rao</p>
+                  <p><span class="orange-text">Order ID: HF-23123</span> &nbsp;&nbsp; Total Amount: <span class="orange-text">₹1129</span> &nbsp;&nbsp; Paid by: <strong>Credit Card</strong> &nbsp;&nbsp; <strong>Date:</strong> June 16, 2018 | 02:10PM</p>
+                  <p>Ozone Complex, D No. 6/3/669, Durga Nagar, Punjagutta, Hyderabad, Telangana 500082</p>
+                  <div class="row no-padding">
+                    <div class="col-sm-4">
+                      <div class="media-left"><i class="fa fa-circle green"></i></div>
+                      <div class="media-body">
+                        <h5>Superman Secret Thickshake</h5>
+                        <p>Breakfast Shakes <br>
+                          Price: <strong>₹143</strong> &nbsp;&nbsp; No.of Items: <strong>1</strong></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="media-left"><i class="fa fa-circle red"></i></div>
+                      <div class="media-body">
+                        <h5>Pineapple Passion Thickshake</h5>
+                        <p>Fruity Delights <br>
+                          Price: <strong>₹143</strong> &nbsp;&nbsp; No.of Items: <strong>1</strong></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="media-left"><i class="fa fa-circle green"></i></div>
+                      <div class="media-body">
+                        <h5>Belgian Chocolate Thickshake</h5>
+                        <p>Choco Delights<br>
+                          Price: <strong>₹143</strong> &nbsp;&nbsp; No.of Items: <strong>1</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix help-block"></div>
+                <div class="delivered-orders">
+                  <p><strong>Customer Name:</strong> Kulakarini</p>
+                  <p><span class="orange-text">Order ID: HF-23124</span> &nbsp;&nbsp; Total Amount: <span class="orange-text">₹629</span> &nbsp;&nbsp; Paid by: <strong>Cash</strong> &nbsp;&nbsp; <strong>Date:</strong> June 17, 2018 | 09:39AM</p>
+                  <p>Ozone Complex, D No. 6/3/669, Durga Nagar, Punjagutta, Hyderabad, Telangana 500082</p>
+                  <div class="row no-padding">
+                    <div class="col-sm-4">
+                      <div class="media-left"><i class="fa fa-circle green"></i></div>
+                      <div class="media-body">
+                        <h5>Superman Secret Thickshake</h5>
+                        <p>Breakfast Shakes <br>
+                          Price: <strong>₹143</strong> &nbsp;&nbsp; No.of Items: <strong>1</strong></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="media-left"><i class="fa fa-circle green"></i></div>
+                      <div class="media-body">
+                        <h5>Belgian Chocolate Thickshake</h5>
+                        <p>Choco Delights<br>
+                          Price: <strong>₹143</strong> &nbsp;&nbsp; No.of Items: <strong>1</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-sm-12">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center  pull-right">
+                    <li class="page-item disabled"> <a class="page-link" href="#" tabindex="-1">Previous</a> </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"> <a class="page-link" href="#">Next</a> </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="tab-pane" id="pendingOrders">
+              <h3>Pending Orders</h3>
+              <div class="col-sm-12">
+                <form class="pull-right">
+                  <div class="col-sm-6">
+                    <div class="control-group form-group">
+                      <select name="country" class="form-control selectpicker" >
+                        <option value=" " >-- Sort by --</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option >March</option>
+                        <option >April</option>
+                        <option >May</option>
+                        <option >June</option>
+                        <option >July</option>
+                        <option >August</option>
+                        <option >September</option>
+                        <option> October</option>
+                        <option >November</option>
+                        <option >December</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="input-group">
+                      <input type="text" value="" class="form-control" placeholder="Search Order ID">
+                      <span class="input-group-btn">
+                      <button type="button" class="btn btn-danger">Go</button>
+                      </span> </div>
+                  </div>
+                </form>
+              </div>
+              <div class="help-block clearfix"></div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#order1"> Order ID: HF-23123 &nbsp;&nbsp; Amount: ₹1129 &nbsp;&nbsp; Date: June 16, 2018 | 02:10PM</a> </h4>
+                </div>
+                <div id="order1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <div class="delivered-orders no-padding">
+                      <p><strong>Customer Name:</strong> Sri Rama</p>
+                      <p>Paid by: <strong>Credit Card</strong></p>
+                      <p>Ozone Complex, D No. 6/3/669, Durga Nagar, Punjagutta, Hyderabad, Telangana 500082</p>
+                      <div class="row no-padding">
+                        <div class="col-sm-4">
+                          <div class="media-left"><i class="fa fa-circle green"></i></div>
+                          <div class="media-body">
+                            <h5>Superman Secret Thickshake</h5>
+                            <p>Breakfast Shakes <br>
+                              Price: <strong>₹143</strong> &nbsp;&nbsp; No.of Items: <strong>1</strong></p>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="media-left"><i class="fa fa-circle red"></i></div>
+                          <div class="media-body">
+                            <h5>Pineapple Passion Thickshake</h5>
+                            <p>Fruity Delights <br>
+                              Price: <strong>₹143</strong> &nbsp;&nbsp; No.of Items: <strong>1</strong></p>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="media-left"><i class="fa fa-circle green"></i></div>
+                          <div class="media-body">
+                            <h5>Belgian Chocolate Thickshake</h5>
+                            <p>Choco Delights<br>
+                              Price: <strong>₹143</strong> &nbsp;&nbsp; No.of Items: <strong>1</strong></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#order2"> Order ID: HF-41123 &nbsp;&nbsp; Amount: ₹2029 &nbsp;&nbsp; Date: June 18, 2018 | 12:10PM</a> </h4>
+                </div>
+                <div id="order2" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <div class="delivered-orders no-padding">
+                      <p><strong>Customer Name:</strong> Sri Rama</p>
+                      <p>Paid by: <strong>Credit Card</strong></p>
+                      <p>Ozone Complex, D No. 6/3/669, Durga Nagar, Punjagutta, Hyderabad, Telangana 500082</p>
+                      <div class="row no-padding">
+                        <div class="col-sm-4">
+                          <div class="media-left"><i class="fa fa-circle green"></i></div>
+                          <div class="media-body">
+                            <h5>Superman Secret Thickshake</h5>
+                            <p>Breakfast Shakes <br>
+                              Price: <strong>₹143</strong> &nbsp;&nbsp; No.of Items: <strong>1</strong></p>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="media-left"><i class="fa fa-circle red"></i></div>
+                          <div class="media-body">
+                            <h5>Pineapple Passion Thickshake</h5>
+                            <p>Fruity Delights <br>
+                              Price: <strong>₹143</strong> &nbsp;&nbsp; No.of Items: <strong>1</strong></p>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="media-left"><i class="fa fa-circle green"></i></div>
+                          <div class="media-body">
+                            <h5>Belgian Chocolate Thickshake</h5>
+                            <p>Choco Delights<br>
+                              Price: <strong>₹143</strong> &nbsp;&nbsp; No.of Items: <strong>1</strong></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane" id="itemsDashboard">
+              <div class="pull-right"><a href="#editItemDetails" data-toggle="modal" class="btn btn-danger">Add Restaurant</a></div>
+              <h3>Items Dashboard</h3>
+              <div class="clearfix help-block">&nbsp;</div>
+              <div class="col-sm-12">
+                <form class="pull-right">
+                  <div class="col-sm-6">
+                    <div class="control-group form-group">
+                      <select name="country" class="form-control selectpicker" >
+                        <option value=" " >-- Select Category --</option>
+                        <option>Prime Steaks</option>
+                        <option>Desserts</option>
+                        <option>Tandoori</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="input-group">
+                      <input type="text" value="" class="form-control" placeholder="Search Items">
+                      <span class="input-group-btn">
+                      <button type="button" class="btn btn-danger">Go</button>
+                      </span> </div>
+                  </div>
+                </form>
+                <div class="help-block"></div>
+              </div>
+              <div class="col-sm-12 no-padding">
+                <div class="media">
+                  <div class="media-left pull-right"> <a href="#editItemDetails" data-toggle="modal" class="btn btn-success">EDIT</a> &nbsp;&nbsp; <a href="javascript:;" class="btn btn-default">DELETE</a></div>
+                  <div class="media-left"><i class="fa fa-circle green"></i></div>
+                  <div class="media-body">
+                    <div class="pull-left item-thumb"><img src="images/veg-biryani.jpg" alt="Pineapple Passion Thickshake" class="img-thumbnail" /></div>
+                    <h5>Pineapple Passion Thickshake</h5>
+                    <p>Fruity Delights</p>
+                    <p class="price"><span>₹179</span> ₹143</p>
+                    <p>Make and share this Pineapple Passion Milkshake recipe from Genius Kitchen.</p>
+                    <p class="price">
+                <input type="radio" name="type" value="Veg" checked>
+                Available &nbsp;&nbsp;
+                <input type="radio" name="type" value="Non-Veg">
+                Not-Available</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="media-left pull-right"> <a href="#editItemDetails" data-toggle="modal" class="btn btn-success">EDIT</a> &nbsp;&nbsp; <a href="javascript:;" class="btn btn-default">DELETE</a></div>
+                  <div class="media-left"><i class="fa fa-circle red"></i></div>
+                  <div class="media-body">
+                    <div class="pull-left item-thumb"><img src="images/veg-biryani.jpg" alt="Pineapple Passion Thickshake" class="img-thumbnail" /></div>
+                    <h5>Superman Secret Thickshake</h5>
+                    <p>Breakfast Shakes</p>
+                    <p class="price"><span>₹179</span> ₹143</p>
+                    <p>Make and share this Pineapple Passion Milkshake recipe from Genius Kitchen.</p>
+                    <p class="price">
+                <input type="radio" name="type" value="Veg" checked>
+                Available &nbsp;&nbsp;
+                <input type="radio" name="type" value="Non-Veg">
+                Not-Available</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="media-left pull-right"> <a href="#editItemDetails" data-toggle="modal" class="btn btn-success">EDIT</a> &nbsp;&nbsp; <a href="javascript:;" class="btn btn-default">DELETE</a></div>
+                  <div class="media-left"><i class="fa fa-circle green"></i></div>
+                  <div class="media-body">
+                    <div class="pull-left item-thumb"><img src="images/veg-biryani.jpg" alt="Pineapple Passion Thickshake" class="img-thumbnail" /></div>
+                    <h5>Belgian Chocolate Thickshake</h5>
+                    <p>Choco Delights</p>
+                    <p class="price"><span>₹179</span> ₹143</p>
+                    <p>Make and share this Pineapple Passion Milkshake recipe from Genius Kitchen.</p>
+                    <p class="price">
+                <input type="radio" name="type" value="Veg" checked>
+                Available &nbsp;&nbsp;
+                <input type="radio" name="type" value="Non-Veg">
+                Not-Available</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="media-left pull-right"> <a href="#editItemDetails" data-toggle="modal" class="btn btn-success">EDIT</a> &nbsp;&nbsp; <a href="javascript:;" class="btn btn-default">DELETE</a></div>
+                  <div class="media-left"><i class="fa fa-circle red"></i></div>
+                  <div class="media-body">
+                    <div class="pull-left item-thumb"><img src="images/veg-biryani.jpg" alt="Pineapple Passion Thickshake" class="img-thumbnail" /></div>
+                    <h5>Belgian Chocolate Milkshake</h5>
+                    <p>Choco Delights</p>
+                    <p class="price"><span>₹179</span> ₹143</p>
+                    <p>Make and share this Pineapple Passion Milkshake recipe from Genius Kitchen.</p>
+                    <p class="price">
+                <input type="radio" name="type" value="Veg" checked>
+                Available &nbsp;&nbsp;
+                <input type="radio" name="type" value="Non-Veg">
+                Not-Available</p>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <hr>
+              <div class="col-sm-12">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center  pull-right">
+                    <li class="page-item disabled"> <a class="page-link" href="#" tabindex="-1">Previous</a> </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"> <a class="page-link" href="#">Next</a> </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="tab-pane" id="editProfile">
+              <h3>Edit Profile</h3>
+              <form class="form-horizontal" action=" " method="post"  id="reg_form">
+                <div class="row no-padding">
+                  <div class="col-sm-6">
+                    <div class="control-group form-group">
+                      <label>Name:</label>
+                      <input type="text" class="form-control" name="name" value="Sri Rama">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="control-group form-group">
+                      <label>Email:</label>
+                      <input type="text" class="form-control" name="email" value="srirama@gmail.com">
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-sm-6">
+                    <div class="control-group form-group">
+                      <label>Mobile Number:</label>
+                      <input type="text" class="form-control" name="mobile" value="9002150150">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="control-group form-group">
+                      <label>Door / Flat No:</label>
+                      <input type="text" class="form-control" name="mobile" value="H. No: 1-3-44/A/111">
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-sm-6">
+                    <div class="control-group form-group">
+                      <label>Address:</label>
+                      <input type="text" class="form-control" name="mobile" value="Srinagar Colony, Hyderabad">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="control-group form-group">
+                      <label>City:</label>
+                      <input type="text" class="form-control" name="mobile" value="Hyderabad">
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-sm-6">
+                    <div class="control-group form-group">
+                      <label>State:</label>
+                      <input type="text" class="form-control" name="mobile" value="Andhra Pradesh">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="control-group form-group">
+                      <label>Country:</label>
+                      <input type="text" class="form-control" name="mobile" value="India">
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-sm-6">
+                    <div class="control-group form-group">
+                      <label>Zip Code:</label>
+                      <input type="text" class="form-control" name="mobile" value="500012">
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix help-block">&nbsp;</div>
+                <h3>Edit Bank Details</h3>
+                <div class="row no-padding">
+                  <div class="col-sm-6">
+                    <div class="control-group form-group">
+                      <label>Bank Name:</label>
+                      <input type="text" class="form-control" name="bank_name" value="ICICI Bank">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="control-group form-group">
+                      <label>Account Name:</label>
+                      <input type="text" class="form-control" name="account_name" value="Sri Rama">
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-sm-6">
+                    <div class="control-group form-group">
+                      <label>Account No.:</label>
+                      <input type="text" class="form-control" name="account_number" value="3543 2523 5132 5213">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="control-group form-group">
+                      <label>IFSC Code:</label>
+                      <div class="clearfix"></div>
+                      <div class="pull-left">
+                        <input type="tel" class="form-control" name="ifsc" style="width:120px;" value="SAC5213">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-sm-12 no-padding">
+                  <div class="control-group form-group">
+                    <button type="submit" class="btn btn-warning">Update</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane" id="changePassword">
+              <div class="col-sm-12">
+                <h3>Change Password</h3>
+                <div class="help-block"></div>
+                <div class="col-sm-4">
+                  <div class="control-group form-group">
+                    <label>Current Password:</label>
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="control-group form-group">
+                    <label>New Password:</label>
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="control-group form-group">
+                    <label>Confirm Password:</label>
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="control-group form-group">
+                    <button type="submit" class="btn btn-warning">Update</button>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="downloadApp">
+  <div class="container">
+    <div class="col-sm-12">
+      <div class="col-sm-6">
+        <h3>Get the Hunger Folks App</h3>
+        <p>The best food in town, right in your pocket.</p>
+        <p><a href="javascript:;" target="_blank"><img src="images/appstore-icon.png" alt="ios" /></a>&nbsp;&nbsp;<a href="javascript:;" target="_blank"><img src="images/android-icon.png" alt="google play" /></a></p>
+        <p>About time, right? So sit back, relax, and enjoy a better way to order food.</p>
+      </div>
+      <div class="col-sm-6">
+        <p class="pull-right"><img src="images/hungry.png" class="img-responsive"alt="hungry" /></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Section
+    ==========================================-->
+<div id="hf-footer" class="hf-footer">
+  <footer id="hf-footer-content">
+    <div class="container">
+      <div class="hf-footer-columns hf-footer-widget-area row">
+        <div class="hf-footer-column-1 col-lg-3 col-md-3 col-sm-3">
+          <aside class="widget widget_text">
+            <div class="help-block"></div>
+            <div class="textwidget">Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when.</div>
+          </aside>
+          <ul class="hf-social">
+            <li class="twitter"><a href="#" title="twitter"><i class="fa fa-twitter"></i></a></li>
+            <li class="facebook"><a href="#" title="facebook"><i class="fa fa-facebook"></i></a></li>
+            <li class="linkedin"><a href="#" title="linkedin"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="hf-footer-column-2 col-lg-2 col-md-2 col-sm-3 col-lg-offset-1 col-md-offset-1">
+          <aside class="widget widget_nav_menu">
+            <h3 class="wg-title">Information</h3>
+            <div class="menu-footer-menu-container">
+              <ul id="menu-footer-menu" class="menu">
+                <li><a href="about-us.html">Who We Are</a></li>
+                <li><a href="faqs.html">FAQ's</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="hf-footer-column-3 col-lg-2 col-md-2 col-sm-2">
+          <aside class="widget widget_nav_menu">
+            <h3 class="wg-title">Work with us</h3>
+            <div class="menu-footer-infomation-container">
+              <ul id="menu-footer-infomation" class="menu">
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="drivers.html">Drivers</a></li>
+                <li><a href="javascript:;">Corporate Accounts</a></li>
+                <li><a href="#vendorRegistration" data-toggle="modal">Vendor Registration</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="hf-footer-column-4 col-lg-4 col-md-4 col-sm-4">
+          <aside class="widget widget-thumbnails">
+            <h3 class="wg-title">Latest News</h3>
+            <ul>
+              <li>
+                <div class="recent-detail">
+                  <div class="hf-post-date"><span>Mar 28, 2017</span></div>
+                  <div class="hf-post-title"> <a href="javascript:;"> What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. </a> </div>
+                </div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-line">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12"><span></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-address">
+    <div class="container">
+      <div class="row">
+        <aside class="widget widget_text">
+          <div class="textwidget">
+            <ul class="lets-talk">
+              <li><i class="fa fa-paper-plane-o"></i>Address comes here, TN 50011</li>
+              <li><i class="fa fa-phone"></i>+91 98848 88504</li>
+              <li><i class="fa fa-envelope-o"></i><a href="mailto:sales@hungerfolks.com">sales@hungerfolks.com</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <footer id="hf-footer-copyright" class="hf-footer-copyright">
+    <div class="container">
+      <div class="hf-footer-copyright-wrap">
+        <div class="col-sm-12"> &copy; 2018 Hunger Folks Inc. All Rights Reserved. </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- Sign In/Sign Up PopUp -->
+<div class="hf-signin-modal js-signin-modal">
+  <div class="hf-signin-modal__container">
+    <ul class="hf-signin-modal__switcher js-signin-modal-switcher js-signin-modal-trigger">
+      <li><a href="#0" data-signin="login" data-type="login">Sign in</a></li>
+      <li><a href="#0" data-signin="signup" data-type="signup">New account</a></li>
+    </ul>
+    <div class="hf-signin-modal__block js-signin-modal-block" data-type="login"> <!-- log in form -->
+      <form class="hf-signin-modal__form">
+        <p class="hf-signin-modal__fieldset">
+          <label class="hf-signin-modal__label hf-signin-modal__label--email hf-signin-modal__label--image-replace" for="signin-email">E-mail / Mobile</label>
+          <input class="hf-signin-modal__input hf-signin-modal__input--full-width hf-signin-modal__input--has-padding hf-signin-modal__input--has-border" id="signin-email" type="email" placeholder="E-mail / Mobile">
+          <span class="hf-signin-modal__error">Error message here!</span> </p>
+        <p class="hf-signin-modal__fieldset">
+          <label class="hf-signin-modal__label hf-signin-modal__label--password hf-signin-modal__label--image-replace" for="signin-password">Password</label>
+          <input class="hf-signin-modal__input hf-signin-modal__input--full-width hf-signin-modal__input--has-padding hf-signin-modal__input--has-border" id="signin-password" type="text"  placeholder="Password">
+          <a href="#0" class="hf-signin-modal__hide-password js-hide-password">Hide</a> <span class="hf-signin-modal__error">Error message here!</span> </p>
+        <p class="hf-signin-modal__fieldset">
+          <input type="checkbox" id="remember-me" checked class="hf-signin-modal__input ">
+          <label for="remember-me">Remember me</label>
+        </p>
+        <p class="hf-signin-modal__fieldset">
+          <input class="hf-signin-modal__input hf-signin-modal__input--full-width" type="submit" value="Login">
+        </p>
+        <p class="js-signin-modal-trigger"><a href="#0" data-signin="reset">Forgot your password?</a></p>
+      </form>
+    </div>
+    <!-- hf-signin-modal__block -->
+    
+    <div class="hf-signin-modal__block js-signin-modal-block" data-type="signup"> <!-- sign up form -->
+      <form class="hf-signin-modal__form">
+        <p class="hf-signin-modal__fieldset">
+          <label class="hf-signin-modal__label hf-signin-modal__label--username hf-signin-modal__label--image-replace" for="signup-username">Username</label>
+          <input class="hf-signin-modal__input hf-signin-modal__input--full-width hf-signin-modal__input--has-padding hf-signin-modal__input--has-border" id="signup-username" type="text" placeholder="Username">
+          <span class="hf-signin-modal__error">Error message here!</span> </p>
+        <p class="hf-signin-modal__fieldset">
+          <label class="hf-signin-modal__label hf-signin-modal__label--email hf-signin-modal__label--image-replace" for="signup-email">E-mail</label>
+          <input class="hf-signin-modal__input hf-signin-modal__input--full-width hf-signin-modal__input--has-padding hf-signin-modal__input--has-border" id="signup-email" type="email" placeholder="E-mail">
+        <p class="hf-signin-modal__fieldset">
+          <label class="hf-signin-modal__label hf-signin-modal__label--email hf-signin-modal__label--image-replace" for="signup-email">Mobile</label>
+          <input class="hf-signin-modal__input hf-signin-modal__input--full-width hf-signin-modal__input--has-padding hf-signin-modal__input--has-border" id="signup-email" type="email" placeholder="Mobile">
+          <span class="hf-signin-modal__error">Error message here!</span> </p>
+        <p class="hf-signin-modal__fieldset">
+          <label class="hf-signin-modal__label hf-signin-modal__label--password hf-signin-modal__label--image-replace" for="signup-password">Password</label>
+          <input class="hf-signin-modal__input hf-signin-modal__input--full-width hf-signin-modal__input--has-padding hf-signin-modal__input--has-border" id="signup-password" type="text"  placeholder="Password">
+          <a href="#0" class="hf-signin-modal__hide-password js-hide-password">Hide</a> <span class="hf-signin-modal__error">Error message here!</span> </p>
+        <p class="hf-signin-modal__fieldset">
+          <label class="hf-signin-modal__label hf-signin-modal__label--password hf-signin-modal__label--image-replace" for="signup-password">OTP</label>
+          <input class="hf-signin-modal__input hf-signin-modal__input--full-width hf-signin-modal__input--has-padding hf-signin-modal__input--has-border" id="signup-password" type="text"  placeholder="OTP">
+          <a href="#0" class="hf-signin-modal__hide-password js-hide-password">Hide</a> <span class="hf-signin-modal__error">Error message here!</span> </p>
+        <p class="hf-signin-modal__fieldset">
+          <input type="checkbox" id="accept-terms" class="hf-signin-modal__input ">
+          <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+        </p>
+        <p class="hf-signin-modal__fieldset">
+          <input class="hf-signin-modal__input hf-signin-modal__input--full-width hf-signin-modal__input--has-padding" type="submit" value="Create account">
+        </p>
+      </form>
+    </div>
+    <!-- hf-signin-modal__block -->
+    
+    <div class="hf-signin-modal__block js-signin-modal-block" data-type="reset"> <!-- reset password form -->
+      <p class="hf-signin-modal__message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+      <form class="hf-signin-modal__form">
+        <p class="hf-signin-modal__fieldset">
+          <label class="hf-signin-modal__label hf-signin-modal__label--email hf-signin-modal__label--image-replace" for="reset-email">E-mail</label>
+          <input class="hf-signin-modal__input hf-signin-modal__input--full-width hf-signin-modal__input--has-padding hf-signin-modal__input--has-border" id="reset-email" type="email" placeholder="E-mail">
+          <span class="hf-signin-modal__error">Error message here!</span> </p>
+        <p class="hf-signin-modal__fieldset">
+          <input class="hf-signin-modal__input hf-signin-modal__input--full-width hf-signin-modal__input--has-padding" type="submit" value="Reset password">
+        </p>
+        <p class="js-signin-modal-trigger"><a href="#0" data-signin="login">Back to log-in</a></p>
+      </form>
+    </div>
+    <!-- hf-signin-modal__block --> 
+    <a href="#0" class="hf-signin-modal__close js-close">Close</a> </div>
+  <!-- hf-signin-modal__container --> 
+</div>
+<!-- Edit Another Item Popup -->
+<div id="editItemDetails" class="modal fade">
+  <div class="modal-dialog modal-md">
+    <form class="form-horizontal" action=" " method="post"  id="reg_form">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Edit Item Details</h4>
+        </div>
+        <div class="modal-body">
+          <div class="col-md-12 no-padding">
+            <div class="col-sm-6">
+              <div class="control-group form-group">
+                <label>Item Name:</label>
+                <input type="text" class="form-control" name="item_name" value="Pineapple Passion Thickshake">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="control-group form-group">
+                <label>Types of Recipe:</label>
+                <div class="clearfix"></div>
+                <input type="radio" name="type" value="Veg" checked>
+                Veg &nbsp;&nbsp;
+                <input type="radio" name="type" value="Non-Veg">
+                Non-Veg </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-6">
+              <div class="control-group form-group">
+                <label>Type:</label>
+                <select name="city" class="form-control selectpicker" >
+                  <option value=" " >-- Select Type --</option>
+                  <option>Prime Steaks</option>
+                  <option>Desserts</option>
+                  <option>Tandoori</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="control-group form-group">
+                <label>Sub Type:</label>
+                <select name="city" class="form-control selectpicker" >
+                  <option value=" " >-- Select Type --</option>
+                  <option>Creme Brulee</option>
+                  <option>Warm chocolate</option>
+                  <option>Apple Turnover</option>
+                </select>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-6">
+              <div class="control-group form-group">
+                <label>Price:</label>
+                <input type="text" class="form-control" name="item_price" value="₹173">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="control-group form-group">
+                <label>Offer Price:</label>
+                <input type="text" class="form-control" name="item_offer_price" value="₹143">
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-6">
+              <div class="control-group form-group">
+                <label>Item Tag:</label>
+                <input type="text" class="form-control" name="item_price" value="Pineapple">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="control-group form-group">
+                <label>Items Status:</label>
+                <div class="clearfix"></div>
+                <input type="radio" name="type" value="Veg" checked>
+                Available &nbsp;&nbsp;
+                <input type="radio" name="type" value="Non-Veg">
+                Not-Available </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-6">
+              <div class="imageupload">
+                <div class="file-tab panel-body">
+                  <label class="btn btn-default btn-file"> <span>Browse</span>
+                    <input type="file" name="image-file">
+                  </label>
+                  <button type="button" class="btn btn-default">Remove</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix help-block">&nbsp;</div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-warning">Update</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<!-- Edit Another Item Popup -->
+<div id="vendorRegistration" class="modal fade">
+  <div class="modal-dialog modal-md">
+    <form class="form-horizontal" action=" " method="post"  id="reg_form">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Vendor Registration</h4>
+        </div>
+        <div class="modal-body">
+          <div class="col-md-12 no-padding">
+            <div class="col-sm-6">
+              <div class="control-group form-group">
+                <label>Restuarent Name:</label>
+                <input type="text" class="form-control" name="restuarent_name" placeholder="Please enter Restuarent Name">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="control-group form-group">
+                <label>Vendor Name:</label>
+                <input type="text" class="form-control" name="name" placeholder="Please enter your name">
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-6">
+              <div class="control-group form-group">
+                <label>Phone Number:</label>
+                <input type="text" class="form-control" name="phone" placeholder="Please enter Phone Number">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="control-group form-group">
+                <label>Email ID:</label>
+                <input type="text" class="form-control" name="email" placeholder="Please enter Email">
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-6">
+              <div class="control-group form-group">
+                <label>Password:</label>
+                <input type="password" class="form-control" name="password" placeholder="Please enter Password">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="control-group form-group">
+                <label>Password Confirm:</label>
+                <input type="password" class="form-control" name="confirmPassword" placeholder="Password Confirm">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix help-block">&nbsp;</div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-warning">REGISTER NOW</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="scroll-to-top"> <a href="#" class="scrollertop"><i class="fa fa-arrow-up"></i></a> </div>
+<script src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/location-find.js"></script> 
+<script type="text/javascript" src="js/signin-popup.js"></script> 
+<script type="text/javascript" src="js/main.js"></script> 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKvtwlFMZRwnQ9Xqb3-n7ULodpJkpKbDM&amp;libraries=places&amp;callback=initMap" async defer></script> 
+<script type="text/javascript" src="js/modernizr.custom.js"></script> 
+<script src="js/bootstrap-imageupload.js"></script> 
+<script src="js/imageupload.js"></script>
+</body>
+</html>

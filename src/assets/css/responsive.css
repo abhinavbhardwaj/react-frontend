@@ -1,0 +1,150 @@
+@media (max-width: 768px){
+  .content {
+	padding: 40% 0 0;
+	}
+.navbar-nav {
+    background-color: #000;
+}
+}
+
+@media (max-width: 603px){
+#tf-menu.navbar-default {
+	background-color: rgba(0, 0, 0, 0.79);
+	}
+#tf-works li.pull-right, #tf-works li.pull-left {
+    margin-top: 10px;
+    float: none !important;
+    text-align: center;
+    display: block;
+}
+label{
+    float: none !important
+}
+.pull-left.fnav,
+.pull-right.fnav {
+    float: none !important;
+    text-align: center;
+}
+
+.hover-bg .hover-text {
+    padding: 12% 10%;
+}
+}
+@media (max-width: 360px){
+.hover-bg .hover-text {
+    padding: 22% 10%;
+}
+}
+ @media only screen and (min-width: 600px) {
+ .hf-signin-modal__form {
+ padding: 2em;
+}
+ .hf-signin-modal__fieldset {
+ margin: 2em 0;
+}
+ .hf-signin-modal__fieldset:first-child {
+ margin-top: 0;
+}
+ .hf-signin-modal__fieldset:last-child {
+ margin-bottom: 0;
+}
+ .hf-signin-modal__input.hf-signin-modal__input--has-padding {
+ padding: 16px 20px 16px 50px;
+}
+ .hf-signin-modal__input[type=submit] {
+ padding: 16px 0;
+}
+}
+.hf-signin-modal__message {
+	padding: 1.4em 1.4em 0;
+	font-size: 1.4rem;
+	line-height: 1.4;
+	text-align: center;
+}
+ @media only screen and (min-width: 600px) {
+ .hf-signin-modal__message {
+ padding: 2em 2em 0;
+}
+}
+.hf-signin-modal__bottom-message {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: -30px;
+	text-align: center;
+	font-size: 1.4rem;
+}
+.hf-signin-modal__bottom-message a {
+	color: #FFF;
+	text-decoration: underline;
+}
+.hf-signin-modal__close {
+	/* form X button on top right */
+  display: block;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	right: 0;
+	top: -40px;
+	background: url("../images/cd-icon-close.svg") no-repeat center center;
+	color: transparent;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+ @media only screen and (min-width: 1170px) {
+ .hf-signin-modal__close {
+ display: none;
+}
+}
+ @media only screen and (min-width: 600px) {
+ .hf-signin-modal__container {
+ margin: 4em auto;
+}
+ .hf-signin-modal__switcher a {
+ height: 70px;
+ line-height: 70px;
+}
+}
+@media (max-width: 767px) {
+.ent_loc_out, .ent_loc_out {
+width: 100% !important;
+}
+.locnt.container {
+padding: 0 !important;
+}
+.ent-location {
+float: left;
+width: 100%;
+}
+#enter_location {
+width: 100%;
+}
+.geo-location {
+width: 100%;
+}
+button.yrloc {
+bottom: 0 !important;
+position: absolute !important;
+right: 44px;
+top: auto !important;
+}
+.ent_loc_out {
+display: table;
+position: relative !important;
+width: 100% !important;
+}
+.sub_loc {
+float: right;
+}
+ input[type="submit"] {
+width: 100%;
+}
+.geo-location {
+width: calc(100% - 90px);
+}
+.ent_loc_out {
+margin: 20px 0 !important;
+}
+}
+
