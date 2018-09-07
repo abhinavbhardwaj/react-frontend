@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import Aux from '../Aux/Aux';
 import classes from './Layout.css'; 
 
-import Routers from '../Config/Routers';
-//import Header from '../../components/Navigation/Header';
+import Routers from '../Config/Routers'; 
+import Header from '../../components/Navigation/Header'; 
 //import Footer from '../../components/Navigation/Footer';
 //import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
 
@@ -15,33 +15,7 @@ class Layout extends Component {
     render () {
         return (
             <Aux> 
-            <div>
-            <nav id="hf-menu" className="navbar navbar-default navbar-fixed-top">
-            <div className="container"> 
-            {/* Brand and toggle get grouped for better mobile display */}
-            <div className="navbar-header">
-              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span className="sr-only">Toggle navigation</span> <span className="icon-bar" /> <span className="icon-bar" /> <span className="icon-bar" /> </button>
-              <a className="navbar-brand" href="index.html"><img src="images/logo.png" alt="HangerFolks" /></a> </div>
-            {/* Collect the nav links, forms, and other content for toggling */}
-            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul className="nav navbar-nav navbar-right hf-main-nav__list js-signin-modal-trigger">
-                <li><a href="food.html">Food</a></li>
-                <li><a href="restaurants.html">Restaurants</a></li>
-                <li><a href="javascript:;"><span className="fa fa-shopping-cart edd-cart-icon"><span className="edd-cart-quantity base_clr_bg">5</span></span></a></li>
-                <li><a className="hf-main-nav__item hf-main-nav__item--signin" href="#0" data-signin="login">Sign in/Sign up</a></li>
-                <li className="dropdown"> <a href="#" className="dropdown-toggle" data-toggle="dropdown"><img alt className="img-circle avatar" src="images/avatar.jpg" /> Tarun <b className="caret" /></a>
-                  <ul className="dropdown-menu">
-                    <li> <a href="#"> <i className="fa fa-user" /> <span className="text">My Account</span> </a> </li>
-                    <li> <a href="#"> <i className="fa fa-list" /> <span className="text">My Orders</span> </a> </li>
-                    <li> <a href="#"> <i className="fa fa-power-off" /> <span className="text">Logout</span> </a> </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        {/* Steps
-    ==========================================*/} 
+    <Header/>
         {/* Page Heading Section Start */}
         <div className="pagehding-sec">
           <div className="pagehding-overlay" />
@@ -221,7 +195,7 @@ class Layout extends Component {
               </div>
             </div>
           </footer>
-          </div> </div>  
+          </div> 
           
           <Routers/>
             </Aux>

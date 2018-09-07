@@ -1,0 +1,48 @@
+
+/* Navigation */
+.hf-menu {
+	padding: 20px;
+	transition: all 0.8s;
+}
+.hf-menu.navbar-default {
+	background-color: rgba(248, 248, 248, 0);
+	border-color: rgba(231, 231, 231, 0);
+}
+.hf-menu a.navbar-brand {
+	text-transform: uppercase;
+	font-size: 22px;
+	color: #fff;
+	font-weight: 900;
+}
+.hf-menu.navbar-default .navbar-nav > li > a {
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+.on {
+	background-color:#121924 !important;
+	padding: 0 !important;
+	-webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #e8500e !important;
+	background-color: transparent;
+	font-weight: 700;
+}
+.navbar-toggle {
+	border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #e8500e;
+	border-color: #e8500e;
+}
+.navbar-default .navbar-toggle:hover>.icon-bar {
+	background-color: #FFF;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #e85010 !important;
+	background-color: transparent;
+}
