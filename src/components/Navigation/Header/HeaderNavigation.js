@@ -1,24 +1,10 @@
 import React from 'react';
-import SiteLogo from '../../assets/images/logo.png';
-import Avatar from '../../assets/images/avatar.jpg';
+import Avatar from '../../../assets/images/avatar.jpg'; 
+import classes from './HeaderNavigation.css';
 
-import classes from './NavigationItem.css';
-
-const Header =  (props) => (
-        <nav  className="navbar navbar-default navbar-fixed-top hf-menu">
-        <div className="container">
-            {/* Brand and toggle get grouped for better mobile display */}
-
-            <div className="navbar-header">
-                
-                <a className="navbar-brand" href="index.html">
-                    <img src={SiteLogo} alt="HangerFolks" />
-                </a>
-            </div>
-            {/* Collect the nav links, forms, and other content for toggling */}
-
-            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul className="nav navbar-nav navbar-right hf-main-nav__list js-signin-modal-trigger">
+const HeaderNavigation = (props) => {
+    return (
+            <ul className="nav navbar-nav navbar-right hf-main-nav__list js-signin-modal-trigger">
                     <li>
                         <a href="food.html">Food</a>
                     </li>
@@ -28,7 +14,7 @@ const Header =  (props) => (
                     <li>
                         <a href="javascript:;">
                             <span className="fa fa-shopping-cart edd-cart-icon">
-                                                            <span className="edd-cart-quantity base_clr_bg">5</span>
+                                <span className="edd-cart-quantity base_clr_bg">5</span>
                             </span>
                         </a>
                     </li>
@@ -62,9 +48,7 @@ const Header =  (props) => (
                         </ul>
                     </li>
                 </ul>
-            </div>
-        </div>
-        </nav>
-        );
-
-export default Header;
+            )
+     
+}
+export default HeaderNavigation;

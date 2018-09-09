@@ -46,3 +46,19 @@
 	color: #e85010 !important;
 	background-color: transparent;
 }
+.base_clr_bg {
+	background-color:#e8500e;
+}
+.edd-cart-icon .edd-cart-quantity {
+	position: absolute;
+	top:-15px;
+	left: 15px;
+	display: inline-block;
+	width:20px;
+	line-height:20px;
+	border-radius: 50%;
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+	font-weight:bold;
+}
